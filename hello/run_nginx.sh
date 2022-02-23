@@ -2,4 +2,6 @@
 set -eu
 
 # you code here ....
-docker run --name nginx-container --network=host -p localhost:80 --detach nginx:1.19
+docker stop nginx-container
+docker rm nginx-container
+docker run --name nginx-container --network=host -p 80:80 -d nginx:1.19
