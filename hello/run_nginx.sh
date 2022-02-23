@@ -2,4 +2,4 @@
 set -eu
 
 # you code here ....
-docker run --name nginx-container -d -p localhost:80 nginx:1.19
+docker run -d --name nginx-container --network=host -p localhost:80 nginx:1.19
