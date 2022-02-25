@@ -4,4 +4,4 @@ set -eu
 # you code here ....
 # docker stop nginx-container
 # docker rm nginx-container
-docker run -it -d --name nginx-container -p 80:80 nginx:1.19
+docker run --rm -it -d --name nginx-container -p localhost:80 nginx:1.19
